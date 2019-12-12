@@ -25,10 +25,10 @@ def home():
 def list():
     if request.method == "POST":
         s = int(request.form['k1'])
-        #r = redis.Redis(host='vrajredis.redis.cache.windows.net', port=6380, db=0, password='q8imBBw02cAQV5uvqpuGvjZA6wpCxUvgK2EiJmN12P8=', ssl=True)
+       
         starttime=time.time()
         con = sql.connect("quiz.db")
-        #con.row_factory = sql.Row
+       
         cur = con.cursor()
         arr = []
         result = []
